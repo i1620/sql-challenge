@@ -1,7 +1,10 @@
 drop table dept_emp;
 drop table dept_manager;
 drop table salaries;
-drop table employees
+drop table employees;
+drop table titles;
+drop table departments;
+
 CREATE TABLE departments (
     dept_no varchar(30) NOT NULL,
     dept_name varchar(30) NOT NULL,
@@ -15,7 +18,7 @@ CREATE TABLE employees (
     birth_date date,
     first_name varchar(35) NOT NULL,
     last_name varchar(35) NOT NULL,
-    gender varchar(1) NOT NULL,
+    sex varchar(1) NOT NULL,
     hire_date date,
     CONSTRAINT pk_employees PRIMARY KEY (
         emp_no
